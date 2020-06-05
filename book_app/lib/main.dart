@@ -1,4 +1,5 @@
 import 'package:book_app/screens/login/login.dart';
+import 'package:book_app/screens/root/root.dart';
 import 'package:book_app/states/currentUser.dart';
 import 'package:book_app/utils/ourTheme.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: OurTheme().buildTheme(),
-        home: OurLogin(),
+        home: OurRoot(),
       ),
     );
   }
