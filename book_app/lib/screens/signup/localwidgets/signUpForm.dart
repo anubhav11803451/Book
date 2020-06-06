@@ -111,6 +111,12 @@ class _OurSignUpFormState extends State<OurSignUpForm> {
             ),
             onPressed: () {
               if (_passwordController.text == _confirmPasswordController.text) {
+                Scaffold.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text("Signed Up!! Succssful"),
+                    duration: Duration(seconds: 2),
+                  ),
+                );
                 _signUpUser(_emailController.text, _passwordController.text,
                     context, _fullNameController.text);
               } else {
