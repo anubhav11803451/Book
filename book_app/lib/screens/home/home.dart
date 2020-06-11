@@ -142,7 +142,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 const EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
             child: RaisedButton(
               child: Text(
-                "Book Club History",
+                "Add a New Book",
                 style: TextStyle(color: Colors.white),
               ),
               onPressed: () => _goToAddBook(context),
